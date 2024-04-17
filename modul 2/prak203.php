@@ -2,40 +2,57 @@
 <html>
 <head>
     <title>Konversi Suhu</title>
-    
-    
-</head>
-<body>
-    
-    <form method="post" action="">
-        <label for="nilai">Nilai:</label>
-        <style>
-        .input-container {
+
+    <style>
+        .form-control {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
         }
-    </style><br>
-        <input type="text" id="nilai" name="nilai" required><br>
+    </style>
+</head>
+<body>
+
+    <form method="post" action="">
+        <div class="form-control">
+            <label for="nilai">Nilai:</label>
+            <input type="text" id="nilai" name="nilai" required>
+        </div>
         <label>Dari:</label><br>
-        <input type="radio" id="C" name="dari_suhu" value="C">
-        <label for="C">Celcius</label><br>
-        <input type="radio" id="F" name="dari_suhu" value="F">
-        <label for="F">Fahrenheit</label><br>
-        <input type="radio" id="Re" name="dari_suhu" value="Re">
-        <label for="Re">Reamur</label><br>
-        <input type="radio" id="K" name="dari_suhu" value="K">
-        <label for="K">Kelvin</label><br>
+        <div class="form-control">
+            <input type="radio" id="C" name="dari_suhu" value="C">
+            <label for="C">Celcius</label>
+        </div>
+        <div class="form-control">
+            <input type="radio" id="F" name="dari_suhu" value="F">
+            <label for="F">Fahrenheit</label>
+        </div>
+        <div class="form-control">
+            <input type="radio" id="Re" name="dari_suhu" value="Re">
+            <label for="Re">Reamur</label>
+        </div>
+        <div class="form-control">
+            <input type="radio" id="K" name="dari_suhu" value="K">
+            <label for="K">Kelvin</label>
+        </div>
         <label>Ke:</label><br>
-        <input type="radio" id="C2" name="ke_suhu" value="C">
-        <label for="C2">Celcius</label><br>
-        <input type="radio" id="F2" name="ke_suhu" value="F">
-        <label for="F2">Fahrenheit</label><br>
-        <input type="radio" id="Re2" name="ke_suhu" value="Re">
-        <label for="Re2">Reamur</label><br>
-        <input type="radio" id="K2" name="ke_suhu" value="K">
-        <label for="K2">Kelvin</label><br>
+        <div class="form-control">
+            <input type="radio" id="C2" name="ke_suhu" value="C">
+            <label for="C2">Celcius</label>
+        </div>
+        <div class="form-control">
+            <input type="radio" id="F2" name="ke_suhu" value="F">
+            <label for="F2">Fahrenheit</label>
+        </div>
+        <div class="form-control">
+            <input type="radio" id="Re2" name="ke_suhu" value="Re">
+            <label for="Re2">Reamur</label>
+        </div>
+        <div class="form-control">
+            <input type="radio" id="K2" name="ke_suhu" value="K">
+            <label for="K2">Kelvin</label>
+        </div>
         <input type="submit" value="Konversi">
     </form>
 

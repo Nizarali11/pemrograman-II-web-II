@@ -5,11 +5,11 @@
 </head>
 <body>
     <form method="post" action="PRAK201.php">
-        <label for="nama1">Nama 1:</label><br>
+        <label for="nama1">Nama 1:</label>
         <input type="text" id="nama1" name="nama1"><br>
-        <label for="nama2">Nama 2:</label><br>
+        <label for="nama2">Nama 2:</label>
         <input type="text" id="nama2" name="nama2"><br>
-        <label for="nama3">Nama 3:</label><br>
+        <label for="nama3">Nama 3:</label>
         <input type="text" id="nama3" name="nama3"><br>
         <input type="submit" value="Urutkan Nama">
     </form>
@@ -29,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Menampilkan hasil
     echo "Output: <br>";
-    echo $nama[0] . "<br>";
-    echo $nama[1] . "<br>";
-    echo $nama[2] . "<br>";
+    for ($i = 0; $i < count($nama); $i++) {
+        echo $nama[$i] . "<br>";
+    }
 }
 ?>
 </body>

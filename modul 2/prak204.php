@@ -21,7 +21,7 @@
     <form action="" method="post" class="form-container">
         <div class="input-container">
             <label for="bilangan">Masukkan Bilangan:</label>
-            <input type="number" id="bilangan" name="bilangan" min="0" max="999">
+            <input type="number" id="bilangan" name="bilangan" min="0" max="1000">
         </div>
         <input type="submit" value="Konversi">
     </form>
@@ -34,7 +34,9 @@
     }
 
     function ejaanBilangan($bilangan) {
-        if ($bilangan >= 632) {
+        if ($bilangan >= 1000) {
+            return "Anda Menginput Melebihi Limit Bilangan";
+        } elseif ($bilangan >= 632) {
             return "Ratusan";
         } elseif ($bilangan >= 100) {
             return "Anda Menginput Melebihi Limit Bilangan";
