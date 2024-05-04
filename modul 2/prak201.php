@@ -16,18 +16,15 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Menerima input dari pengguna
+    
     $nama1 = $_POST['nama1'];
     $nama2 = $_POST['nama2'];
     $nama3 = $_POST['nama3'];
 
-    // Menyimpan nama dalam array
     $nama = array($nama1, $nama2, $nama3);
 
-    // Mengurutkan array
     sort($nama, SORT_STRING | SORT_FLAG_CASE);
 
-    // Menampilkan hasil
     echo "Output: <br>";
     for ($i = 0; $i < count($nama); $i++) {
         echo $nama[$i] . "<br>";
